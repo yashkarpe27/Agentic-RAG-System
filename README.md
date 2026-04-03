@@ -2,37 +2,6 @@
 
 # 🧠 Agentic RAG System using OpenRouter
 
-## Diagram
-                ┌──────────────┐
-                │   User Query │
-                └──────┬───────┘
-                       ↓
-                ┌──────────────┐
-                │    Agent     │
-                └──────┬───────┘
-         ┌─────────────┼─────────────┐
-         ↓             ↓             ↓
-   ┌──────────┐  ┌──────────┐  ┌──────────┐
-   │   RAG    │  │   API    │  │  Hybrid  │
-   └────┬─────┘  └────┬─────┘  └────┬─────┘
-        ↓              ↓             ↓
- ┌──────────────┐     │     ┌──────────────┐
- │  Retrieval   │     │     │ External API │
- │ (FAISS+BM25) │     │     └──────────────┘
- └────┬─────────┘     │
-      ↓               │
- ┌──────────────┐     │
- │  Reranker    │     │
- └────┬─────────┘     │
-      ↓               │
- ┌──────────────┐     │
- │ OpenRouter   │◄────┘
- │    LLM       │
- └────┬─────────┘
-      ↓
- ┌──────────────┐
- │   Response   │
- └──────────────┘
 ## 🚀 Overview
 
 This project implements an **Agentic Retrieval-Augmented Generation (RAG) System** using OpenRouter as the LLM provider.
